@@ -1,0 +1,20 @@
+{
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "copy-paste": "^1.5.3",
+    "dotenv": "^16.4.7",
+    "input": "^1.0.1",
+    "node-notifier": "^10.0.1",
+    "telegram": "^2.26.22"
+  }
+}
