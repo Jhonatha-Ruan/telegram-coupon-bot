@@ -66,6 +66,7 @@ const session = new StringSession(sessionData);
             notifier.notify({
                 title: 'Cupom Copiado!',
                 message: `O cupom ${couponCode} foi copiado para a área de transferência.`,
+                icon: 'assets/coupon.ico',
                 sound: true,
                 wait: true,
             });
