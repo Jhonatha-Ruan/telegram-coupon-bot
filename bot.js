@@ -45,7 +45,7 @@ const session = new StringSession(sessionData);
         const channelId = message.peerId?.channelId?.value || "Desconhecido";
         const text = message.message || "[Mensagem sem texto]";
 
-        const regex = /\b[A-Z0-9]{8,}\b/;
+        const regex = /Código:\s*([A-Z0-9]+)/i;
         const match = text.match(regex);
 
         console.log("\n---------------------------------------");
@@ -57,7 +57,7 @@ const session = new StringSession(sessionData);
         console.log("---------------------------------------");
 
         if (match) {
-            const couponCode = match[0];
+            const couponCode = match[1];
             clipboard.copy(couponCode, () => {
                 console.log(`🎟 Cupom copiado para a área de transferência: ${couponCode}`);
                 console.log("---------------------------------------\n");
